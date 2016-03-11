@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator Project</title>
+		 <link rel="stylesheet" type="text/css" href="calc.css">
+		 <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+		 <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
+    	 <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+  	 	<!-- TODO: 1] CRreate a history function and append the calculations to the list ul html. -->
+    	 <script type="module">
+			 import {Calculator} from './calc.js';
+			 window.calculator = new Calculator();
+		 </script>		 
+	</head>
+	<body>
+	  <header>
+	  	<h1 class="heading">EE81 Calculator</h1>
+	  </header>
+	  <main>  
+
+	  	<!-- NEW CALC START -->
+
+		<div class="wrap">
+		    <div class="cal">
+		        <span class="title">Calculator</span>
+		        <div class="screen"><input type="text" class="padding screen" readonly id="display" value=""></div>
+		        <ul class="buttons">
+		            <li><input type="button" class="val" value="C" onclick='window.calculator.clear()'></li>
+		            <li><a class="val" href="-">&plusmn;</a></li>
+		            <li><input type="button" class="val" value="/" onclick='window.calculator.compute("/")'></li>
+		            <li><input type="button" class="val" value="*" onclick='window.calculator.compute("*")'></li>
+		            <li><input type="button" class="val" value="7" onclick='window.calculator.compute("7")'></li>
+		            <li><input type="button" class="val" value="8" onclick='window.calculator.compute("8")'></li>
+		            <li><input type="button" class="val" value="9" onclick='window.calculator.compute("9")'></li>
+		            <li><input type="button" class="val" value="-" onclick='window.calculator.compute("-")'></li>
+		            <li><input type="button" class="val" value="4" onclick='window.calculator.compute("4")'></li>
+		            <li><input type="button" class="val" value="5" onclick='window.calculator.compute("5")'></li>
+		            <li><input type="button" class="val" value="6" onclick='window.calculator.compute("6")'></li>
+		            <li><input type="button" class="val" value="+" onclick='window.calculator.compute("+")'></li>
+		            <li><input type="button" class="val" value="1" onclick='window.calculator.compute("1")'></li>
+		            <li><input type="button" class="val" value="2" onclick='window.calculator.compute("2")'></li>
+		            <li><input type="button" class="val" value="3" onclick='window.calculator.compute("3")'></li>
+		            <li><input type="button" class="val" value="=" onclick='window.calculator.compute("=")'></li>
+		            <li><input type="button" class="val" value="0" onclick='window.calculator.compute("0")'></li>
+		            <li><input type="button" class="val" value="." onclick='window.calculator.compute(".")'></li>
+		        </ul>
+		    </div>
+		    
+		    <div id="history" class="history">
+		        <span class="clear_his">Clear</span>
+		        <ul  id="list" class="list">
+		        	<li id="one"class="one"></li>
+		        </ul>
+		    </div>
+		</div>
+
+	  </main>	
+	</body>
+</html>
+

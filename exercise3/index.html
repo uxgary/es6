@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator Project</title>
+		 <link rel="stylesheet" type="text/css" href="calc.css">
+		 <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    	 <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    	  <script type="module">
+			 import {Calculator} from './calc.js';
+			 window.calculator = new Calculator();
+		 </script>	
+	</head>
+	<body>
+	  <header>
+	  	<h1 class="heading">EE81 Calculator</h1>
+	  </header>
+	  <main>  
+
+	  	<!-- NEW CALC START -->
+
+		<div class="wrap">
+		    <div class="cal">
+		        <span class="title">Calculator</span>
+		        <div class="screen"><input type="text" class="padding screen" readonly id="d" value="0"></div>
+		        <ul class="buttons">
+		            <li><a class="clear" href="c">C</a></li>
+		            <li><a class="val" href="-">&plusmn;</a></li>
+		            <li><input type="button" class="val" value="/" onclick=''></li>
+		            <li><input type="button" class="val" value="*" onclick=''></li>
+		            <li><input type="button" class="val" value="7" onclick=''></li>
+		            <li><input type="button" class="val" value="8" onclick=''></li>
+		            <li><input type="button" class="val" value="9" onclick=''></li>
+		            <li><input type="button" class="val" value="-" onclick=''></li>
+		            <li><input type="button" class="val" value="4" onclick=''></li>
+		            <li><input type="button" class="val" value="5" onclick=''></li>
+		            <li><input type="button" class="val" value="6" onclick=''></li>
+		            <li><input type="button" class="val" value="+" onclick=''></li>
+		            <li><input type="button" class="val" value="1" onclick=''></li>
+		            <li><input type="button" class="val" value="2" onclick=''></li>
+		            <li><input type="button" class="val" value="3" onclick=''></li>
+		            <li><input type="button" class="val" value="=" onclick=''></li>
+		            <li><input type="button" class="val" value="0" onclick=''></li>
+		            <li><input type="button" class="val" value="." onclick=''></li>
+		        </ul>
+		    </div>
+		    
+		    <div class="history">
+		        <span class="clear_his">Clear</span>
+		        <ul class="list"></ul>
+		    </div>
+		</div>
+	  </main>	
+	</body>
+</html>
+

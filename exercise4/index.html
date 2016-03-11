@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator Project</title>
+		 <link rel="stylesheet" type="text/css" href="calc.css">
+		 <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    	 <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    	 <!-- TODO: 1] Import the calculator object as "calculator" and store it to the window object so you can reference it later. -->
+    	 <script type="module">
+			 
+		 </script>	
+	</head>
+	<body>
+	  <header>
+	  	<h1 class="heading">ES6 Calculator Challenge</h1>
+	  </header>
+	  <main>  
+	  	<!-- 2.] CALL THE COMPUTER, CLEAR FUNCTIONS RESPECTIVELY, REMEMBER THAT THE OBJECT SHOULD BE STORED TO THE WINDOW TO AVOID SCOPE ISSUES. -->
+		<div class="box">
+			<div class="display"><input type="text" class="padding" readonly size="18" id="display" value=""></div>
+			<div class="keys">
+			    <p><input type="button" class="button gray" value="mrc" onclick='c("Created....................")'>
+			    <input type="button" class="button gray" value="m-">
+			    <input type="button" class="button gray" value="m+">
+			    <input type="button" class="button pink" value="/"></p>
+			    <p><input type="button" class="button black" value="7" onclick="" >
+			    <input type="button" class="button black" value="8">
+			    <input type="button" class="button black" value="9">
+			    <input type="button" class="button pink" value="*"></p>
+			    <p><input type="button" class="button black" value="4">
+			    <input type="button" class="button black" value="5">
+			    <input type="button" class="button black" value="6">
+			    <input type="button" class="button pink" value="-"></p>
+			    <p><input type="button" class="button black" value="1" onclick="calculator.calc(1)" >
+			    <input type="button" class="button black" value="2">
+			    <input type="button" class="button black" value="3">
+			    <input type="button" class="button pink" value="+"></p>
+			    <p><input type="button" class="button black" value="0">
+			    <input type="button" class="button black" value=".">
+			    <input type="button" class="button black" value="C">
+			    <input type="button" class="button orange" value="="></p>
+			</div>
+		</div>
+	  </main>	
+	</body>
+</html>		

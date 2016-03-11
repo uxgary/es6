@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator Project</title>
+		 <link rel="stylesheet" type="text/css" href="calc.css">
+		 <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    	 <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+    	  <script src="./calc.js"></script>
+	</head>
+	<body>
+	  <header>
+	  	<h1 class="heading">ES6 Calculator Challenge</h1>
+	  </header>
+	  <main>  
+		<div class="box">
+			<div class="display"><input type="text" class="padding" readonly size="18" id="display" value="0"></div>
+			<div class="keys">
+			    <p><input type="button" class="button gray" value="mrc" onclick='c("Created....................")'>
+			    <input type="button" class="button gray" value="m-" onclick=''>
+			    <input type="button" class="button gray" value="m+" onclick=''>
+			    <input type="button" class="button pink" value="/" onclick="calculator.calc('/')"></p>
+			    <p><input type="button" class="button black" value="7" onclick="calculator.calc(7)">
+			    <input type="button" class="button black" value="8" onclick="calculator.calc(8)">
+			    <input type="button" class="button black" value="9" onclick="calculator.calc(9)">
+			    <input type="button" class="button pink" value="*" onclick="calculator.calc('*')"></p>
+			    <p><input type="button" class="button black" value="4" onclick="calculator.calc(4)">
+			    <input type="button" class="button black" value="5" onclick="calculator.calc(5)">
+			    <input type="button" class="button black" value="6" onclick="calculator.calc(6)">
+			    <input type="button" class="button pink" value="-" onclick="calculator.calc('-')"></p>
+			    <p><input type="button" class="button black" value="1" onclick="calculator.calc(1)">
+			    <input type="button" class="button black" value="2" onclick="calculator.calc(2)">
+			    <input type="button" class="button black" value="3" onclick="calculator.calc(3)">
+			    <input type="button" class="button pink" value="+" onclick="calculator.calc('+')"></p>
+			    <p><input type="button" class="button black" value="0" onclick="calculator.calc(0)">
+			    <input type="button" class="button black" value="." onclick="calculator.calc('.')">
+			    <input type="button" class="button black" value="C" onclick=''>
+			    <input type="button" class="button orange" value="=" onclick="calculator.calc('=')"></p>
+			</div>
+		</div>
+	  </main>	
+	</body>
+</html>
